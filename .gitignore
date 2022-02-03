@@ -151,3 +151,4 @@ build/Release
 node_modules
 .temp
 build
+dist
