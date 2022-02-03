@@ -1,0 +1,107 @@
+{
+  "vite/modulepreload-polyfill": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/store/root.ts": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/assets/test.jpg": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "plugin-vue:export-helper": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/pages/index.vue": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "../../../../../@vite-plugin-pages/generated-pages": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/App.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/App.vue": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "src/main.ts": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "index.html": [
+    "/assets/test.787f7936.jpg"
+  ],
+  "node_modules/@nuxt/devalue/dist/devalue.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/env.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/const.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/proxy.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/api.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/app.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/component.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/context.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/hooks.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/util.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/index.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/plugin.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/index.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vue-router/dist/vue-router.esm-bundler.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/@vueuse/head/dist/index.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vite-ssg/dist/chunks/state.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vite-ssg/dist/chunks/ClientOnly.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vite-ssg/dist/index.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/vue-demi/lib/index.mjs": [
+    "/assets/vendor.fba8b1a7.js"
+  ],
+  "node_modules/pinia/dist/pinia.esm-browser.js": [
+    "/assets/vendor.fba8b1a7.js"
+  ]
+}
