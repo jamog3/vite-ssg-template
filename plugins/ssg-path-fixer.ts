@@ -1,4 +1,4 @@
-export function fixPathWhenSSG (route, parent) {
+export function fixPathWhenSSG (route: any, _parent: any) {
   if (process.env['VITE_SSG'] !== 'true') return route
 
   if (route.component.match(/\/index\.(vue|js)$/) && route.path !== '/') {

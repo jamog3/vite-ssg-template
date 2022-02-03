@@ -19,7 +19,7 @@ const config: UserConfig = {
     }),
     Pages({
       extendRoute: (route, parent) => {
-        return fixPathWhenSSG(route)
+        return fixPathWhenSSG(route, parent)
       }
     }),
     // Layouts({

@@ -6,11 +6,11 @@
     <router-link class="icon-btn mx-2" to="/">
       index
     </router-link>
-    <router-link class="icon-btn mx-2" to="/fuga">
-      fuga
-    </router-link>
     <router-link class="icon-btn mx-2" to="/hoge">
       hoge
     </router-link>
   </nav>
+  <div>
+    current path: {{ $route.path }}
+  </div>
 </template>

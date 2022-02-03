@@ -1,6 +1,8 @@
 <template>
   <p>Hello I am Index</p>
   <img src="@/assets/test.jpg" alt="">
+  <Counter />
+  <MousePos />
   <pre>
     {{ JSON.stringify(user) }}
   </pre>
@@ -19,11 +21,6 @@ export default {
         {
           name: 'description',
           content: 'Website description',
-        },
-      ],
-      style: [
-        {
-          children: 'body {color: #567839}',
         },
       ],
     })
