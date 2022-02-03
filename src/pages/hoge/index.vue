@@ -1,20 +1,16 @@
 <template>
-  <p>Hello I am Index</p>
-  <img src="@/assets/test.jpg" alt="">
-  <pre>
-    {{ JSON.stringify(user) }}
-  </pre>
+  <p>Hello I am Hoge</p>
 </template>
 
 <script lang="ts">
 import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
-import { useRootStore } from '@/store/root'
+import { useRootStore } from '../../store/root'
 
 export default {
   setup() {
     useHead({
-      title: 'Hello',
+      title: 'Hello Hoge',
       meta: [
         {
           name: 'description',
@@ -33,9 +29,6 @@ export default {
     return {
       user: computed(() => store.user),
     }
-  },
-  serverPrefetch() {
-    console.log('prefetch')
-  },
+  }
 }
 </script>

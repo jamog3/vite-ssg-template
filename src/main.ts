@@ -1,16 +1,29 @@
 import devalue from '@nuxt/devalue'
 import { ViteSSG } from 'vite-ssg'
 import { createPinia } from 'pinia'
-import routes from 'virtual:generated-pages'
+import generatedRoutes from 'virtual:generated-pages'
+import { setupLayouts } from 'virtual:generated-layouts'
 import { useRootStore } from './store/root'
 import App from './App.vue'
+
+const routes = setupLayouts(generatedRoutes)
 
 export const createApp = ViteSSG(
   App,
   { routes },
-  ({ app, router, initialState }) => {
+  ({ app, router, isClient, initialState }) => {
     const pinia = createPinia()
     app.use(pinia)
+
+    // Note: redirect
+    if (isClient) {
+      const pathname = location.pathname
+      if (pathname.indexOf('index.html') >= 0) {
+        location.replace(pathname.replace(/index\.html/, ''));
+      } else if (pathname.indexOf('.html') >= 0) {
+        location.replace('/');
+      }
+    }
 
     if (import.meta.env.SSR) {
       // this will be stringified and set to window.__INITIAL_STATE__
