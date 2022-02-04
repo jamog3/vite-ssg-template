@@ -6,8 +6,13 @@
     <router-link class="icon-btn mx-2" to="/">
       index
     </router-link>
+    /
     <router-link class="icon-btn mx-2" to="/hoge">
       hoge
+    </router-link>
+    /
+    <router-link class="icon-btn mx-2" to="/fuga">
+      fuga
     </router-link>
   </nav>
   <div>

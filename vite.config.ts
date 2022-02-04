@@ -22,12 +22,6 @@ const config: UserConfig = {
         return fixPathWhenSSG(route, parent)
       }
     }),
-    // Layouts({
-    //   layoutsDir: 'src/layouts'
-    // }),
-    // Pages({
-    //   extensions: ['vue'],
-    // }),
     Layouts(),
     Components({
       extensions: ['vue'],

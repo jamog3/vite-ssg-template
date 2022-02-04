@@ -31,8 +31,5 @@ export default {
       user: computed(() => store.user),
     }
   },
-  serverPrefetch() {
-    console.log('prefetch')
-  },
 }
 </script>
