@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 
 interface RootState {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   user: Record<string, any> | null
 }
 

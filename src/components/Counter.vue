@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { defineProps, ref } from 'vue'
 
 const props = defineProps<{ init?: number }>()
 
@@ -20,7 +20,7 @@ const counter = ref(props.init || 0)
 
 <style lang="postcss" scoped>
 .counter {
+  padding: 5px 10px 10px;
   border: 2px dashed #3eaf7c;
-  padding: 5px 10px 10px 10px;;
 }
 </style>

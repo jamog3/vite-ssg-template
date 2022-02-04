@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function fixPathWhenSSG(route: any) {
   if (process.env['VITE_SSG'] !== 'true') return route
 
