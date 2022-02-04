@@ -15,7 +15,11 @@
     "types": [
       "vite/client",
       "vite-plugin-pages/client"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
   },
   "exclude": [
     "**/dist",

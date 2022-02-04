@@ -1,4 +1,4 @@
-export function fixPathWhenSSG (route: any, _parent: any) {
+export function fixPathWhenSSG(route: any) {
   if (process.env['VITE_SSG'] !== 'true') return route
 
   if (
@@ -8,9 +8,9 @@ export function fixPathWhenSSG (route: any, _parent: any) {
     console.log(`\nfix index path of ${route.component} for SSG\n`)
     return {
       ...route,
-      path: `${route.path}/index`
+      path: `${route.path}/index`,
     }
-  }  else {
+  } else {
     return route
   }
 }

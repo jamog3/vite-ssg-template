@@ -18,9 +18,9 @@ const props = defineProps<{ init?: number }>()
 const counter = ref(props.init || 0)
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .counter {
   border: 2px dashed #3eaf7c;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;;
 }
 </style>
