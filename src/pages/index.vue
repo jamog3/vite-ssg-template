@@ -9,11 +9,11 @@
 </template>
 
 <script lang="ts">
-import { computed } from 'vue'
+import { computed, defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 import { useRootStore } from '@/store/root'
 
-export default {
+export default defineComponent({
   setup() {
     useHead({
       title: 'Hello',
@@ -31,5 +31,5 @@ export default {
       user: computed(() => store.user),
     }
   },
-}
+})
 </script>

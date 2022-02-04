@@ -12,10 +12,8 @@ import 'what-input'
 </script>
 
 <style lang="postcss">
-[data-whatintent="mouse"],
-[data-whatintent="touch"] {
-  *:focus {
-    outline: none;
-  }
+[data-whatintent="mouse"]:focus,
+[data-whatintent="touch"]:focus {
+  outline: none;
 }
 </style>

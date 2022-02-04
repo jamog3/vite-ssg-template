@@ -12,7 +12,11 @@
     "@vue/typescript/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2021
+    "ecmaVersion": 2021,
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [
+      ".vue"
+    ]
   },
   "plugins": [],
   "rules": {

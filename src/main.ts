@@ -4,6 +4,7 @@ import { createPinia } from 'pinia'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { useRootStore } from './store/root'
+import VueSmoothScroll from 'vue3-smooth-scroll'
 import App from './App.vue'
 
 const routes = setupLayouts(generatedRoutes)
@@ -14,6 +15,10 @@ export const createApp = ViteSSG(
   ({ app, router, isClient, initialState }) => {
     const pinia = createPinia()
     app.use(pinia)
+    app.use(VueSmoothScroll, {
+      duration: 240,
+      updateHistory: false
+    })
 
     // Note: redirect
     if (isClient) {
