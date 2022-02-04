@@ -1,14 +1,11 @@
 {
-  "plugins": [
-    "stylelint-order"
-  ],
+  "plugins": ["stylelint-order"],
   "extends": [
+    "stylelint-config-html/vue",
     "stylelint-config-standard",
     "stylelint-config-property-sort-order-smacss"
   ],
-  "ignoreFiles": [
-    "node_modules/**/*"
-  ],
+  "ignoreFiles": ["node_modules/**/*"],
   "customSyntax": "postcss-html",
   "rules": {
     "indentation": 2,
@@ -21,6 +18,7 @@
         "ignoreAtRules": ["custom-media", "import-normalize"]
       }
     ],
-    "no-empty-first-line": null
+    "no-empty-first-line": null,
+    "custom-property-no-missing-var-function": null
   }
 }

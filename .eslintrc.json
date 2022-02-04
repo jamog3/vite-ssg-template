@@ -7,8 +7,8 @@
   },
   "extends": [
     "plugin:vue/vue3-recommended",
+    "plugin:vue/essential",
     "eslint:recommended",
-    "prettier",
     "@vue/typescript/recommended"
   ],
   "parserOptions": {
@@ -16,10 +16,33 @@
   },
   "plugins": [],
   "rules": {
+    "semi": [
+      "error",
+      "never",
+      {
+        "beforeStatementContinuationChars": "never"
+      }
+    ],
+    "semi-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+    "vue/no-multiple-template-root": [
+      "off"
+    ],
     "vue/multi-word-component-names": [
       "off"
     ],
     "vue/max-attributes-per-line": [
+      "off"
+    ],
+    "vue/singleline-html-element-content-newline": [
       "off"
     ]
   }

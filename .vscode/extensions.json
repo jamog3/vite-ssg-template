@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "johnsoncodehk.volar",
-    "stylelint.vscode-stylelint"
+    "dbaeumer.vscode-eslint",
+    "hex-ci.stylelint-plus"
   ],
 }

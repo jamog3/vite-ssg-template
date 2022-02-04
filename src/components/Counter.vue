@@ -1,12 +1,8 @@
 <template>
   <div class="counter">
     <div>Counter: {{ counter }}</div>
-    <button @click="counter += 1">
-      Inc
-    </button>
-    <button @click="counter -= 1">
-      Dec
-    </button>
+    <button @click="counter += 1">Inc</button>
+    <button @click="counter -= 1">Dec</button>
   </div>
 </template>
 
@@ -14,7 +10,6 @@
 import { defineProps, ref } from 'vue'
 
 const props = defineProps<{ init?: number }>()
-
 const counter = ref(props.init || 0)
 </script>
 

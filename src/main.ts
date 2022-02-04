@@ -19,9 +19,9 @@ export const createApp = ViteSSG(
     if (isClient) {
       const pathname = location.pathname
       if (pathname.indexOf('index.html') >= 0) {
-        location.replace(pathname.replace(/index\.html/, ''));
+        location.replace(pathname.replace(/index\.html/, ''))
       } else if (pathname.indexOf('.html') >= 0) {
-        location.replace('/');
+        location.replace('/')
       }
     }
 
