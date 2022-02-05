@@ -18,7 +18,7 @@ const user = computed(() => store.user)
 
 <template>
   <p>Hello I am Index</p>
-  <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy">
+  <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy" />
   <Counter />
   <MousePos />
   <div class="hoge">a</div>
@@ -29,7 +29,7 @@ const user = computed(() => store.user)
   </pre>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .image {
   display: block;
   width: 100%;

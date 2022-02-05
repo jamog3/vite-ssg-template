@@ -9,7 +9,7 @@ export function fixPathWhenSSG(route: any) {
     console.log(`\nfix index path of ${route.component} for SSG\n`)
     return {
       ...route,
-      path: `${route.path}/index`,
+      path: `${route.path}/index`
     }
   } else {
     return route

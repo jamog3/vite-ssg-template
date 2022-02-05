@@ -8,12 +8,12 @@ interface RootState {
 export const useRootStore = defineStore({
   id: 'root',
   state: (): RootState => ({
-    user: null,
+    user: null
   }),
   getters: {
     isReady(state) {
       return !!state.user
-    },
+    }
   },
   actions: {
     initialize() {
@@ -24,8 +24,8 @@ export const useRootStore = defineStore({
       this.user = {
         id: 1,
         firstName: 'Jane',
-        lastName: 'Doe',
+        lastName: 'Doe'
       }
-    },
-  },
+    }
+  }
 })

@@ -9,10 +9,9 @@
 <script setup lang="ts">
 import { defineProps, withDefaults, ref } from 'vue'
 
-const props = withDefaults(
-  defineProps<{ init?: number }>(), {
-    init: 0
-  })
+const props = withDefaults(defineProps<{ init?: number }>(), {
+  init: 0
+})
 const counter = ref(props.init || 0)
 </script>
 

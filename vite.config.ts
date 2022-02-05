@@ -10,12 +10,12 @@ import { fixPathWhenSSG } from './plugins/ssg-path-fixer'
 const config: UserConfig = {
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   plugins: [
     Vue({
-      include: [/\.vue$/],
+      include: [/\.vue$/]
     }),
     Pages({
       extendRoute: (route) => {
@@ -24,13 +24,13 @@ const config: UserConfig = {
     }),
     Layouts(),
     Components({
-      extensions: ['vue'],
-    }),
+      extensions: ['vue']
+    })
   ],
   ssgOptions: {
     script: 'async',
-    formatting: 'prettify',
-  },
+    formatting: 'prettify'
+  }
 }
 
 export default config
