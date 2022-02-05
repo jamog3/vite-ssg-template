@@ -5,11 +5,13 @@
     "stylelint-config-standard",
     "stylelint-config-property-sort-order-smacss"
   ],
-  "ignoreFiles": ["node_modules/**/*"],
+  "ignoreFiles": [
+    "node_modules/**/*"
+  ],
   "customSyntax": "postcss-html",
   "rules": {
     "indentation": 2,
-    "comment-empty-line-before": "never",
+    "comment-empty-line-before": null,
     "declaration-no-important": true,
     "value-list-comma-newline-after": "never-multi-line",
     "at-rule-no-unknown": [
@@ -19,6 +21,8 @@
       }
     ],
     "no-empty-first-line": null,
-    "custom-property-no-missing-var-function": null
+    "custom-property-no-missing-var-function": null,
+    "rule-empty-line-before": "always",
+    "at-rule-empty-line-before": "never"
   }
 }

@@ -1,0 +1,23 @@
+/* Base
+ * ========================================================================== */
+
+body {
+  margin: 0;
+  font-family: var(--font-base-family);
+  letter-spacing: var(--font-letter-spacing);
+  line-height: 1.4;
+  font-feature-settings: "palt" 1;
+  font-variant-numeric: tabular-nums;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+a {
+  transition: opacity 0.24s var(--animation-md) 0s;
+  color: var(--color-link-text);
+  text-decoration: underline;
+  &:hover {
+    opacity: var(--color-hover);
+    text-decoration: none;
+  }
+}

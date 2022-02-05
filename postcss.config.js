@@ -3,7 +3,6 @@ module.exports = {
     require('postcss-import'),
     require('postcss-rem'),
     require('stylelint'),
-    require('postcss-normalize'),
     require('postcss-preset-env')({
       autoprefixer: {
         grid: 'autoplace',
@@ -23,4 +22,4 @@ module.exports = {
       throwError: false,
     }),
   ],
-};
+}

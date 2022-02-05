@@ -10,8 +10,9 @@ import 'what-input'
 </template>
 
 <style lang="postcss">
-[data-whatintent="mouse"]:focus,
-[data-whatintent="touch"]:focus {
-  outline: none;
-}
+/* stylelint-disable */
+@import "the-new-css-reset/css/reset.css";
+/* stylelint-enebled */
+@import "@/assets/styles/common/variables/_index.css";
+@import "@/assets/styles/common/_index.css";
 </style>

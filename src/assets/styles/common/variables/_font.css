@@ -1,0 +1,7 @@
+/* Variables - font
+ * ========================================================================== */
+
+:root {
+  --font-base-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", yugothic, "ヒラギノ角ゴ ProN W3", hiragino kaku gothic pron, arial, "メイリオ", meiryo, sans-serif;
+  --font-letter-spacing: 0.15em;
+}

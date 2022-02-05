@@ -1,0 +1,10 @@
+/* Variables - color
+ * ========================================================================== */
+
+:root {
+  --color-base-text: #4a4a4a;
+  --color-key-text: #009ff1;
+  --color-link-text: #009ff1;
+  --color-hover-text: #fff;
+  --color-hover: 0.75;
+}

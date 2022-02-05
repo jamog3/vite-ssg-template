@@ -18,10 +18,46 @@ const user = computed(() => store.user)
 
 <template>
   <p>Hello I am Index</p>
-  <img src="@/assets/test.jpg" alt="">
+  <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy">
   <Counter />
   <MousePos />
+  <div class="hoge">a</div>
+  <div class="hoge3">a</div>
+  <div class="hoge4">a</div>
   <pre>
     {{ JSON.stringify(user) }}
   </pre>
 </template>
+
+<style lang="postcss">
+.image {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+.hoge {
+  display: block;
+  background: #00f;
+  @media screen and (--media-pc) {
+    display: grid;
+  }
+}
+
+.hoge3 {
+  color: #ddd;
+  font-size: rem(16px);
+}
+
+.hoge4 {
+  display: grid;
+  max-width: var(--width-min);
+  transition: margin-right 2s var(--animation-md) 0.5s;
+  font-size: rem(10px);
+  font-weight: bold;
+  @media screen and (--media-pc) {
+    display: flex;
+  }
+}
+</style>

@@ -7,9 +7,12 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref } from 'vue'
+import { defineProps, withDefaults, ref } from 'vue'
 
-const props = defineProps<{ init?: number }>()
+const props = withDefaults(
+  defineProps<{ init?: number }>(), {
+    init: 0
+  })
 const counter = ref(props.init || 0)
 </script>
 
@@ -17,5 +20,6 @@ const counter = ref(props.init || 0)
 .counter {
   padding: 5px 10px 10px;
   border: 2px dashed #3eaf7c;
+  font-size: rem(12px);
 }
 </style>
