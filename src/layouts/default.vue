@@ -1,15 +1,13 @@
+<script setup lang="ts">
+import 'what-input'
+</script>
+
 <template>
   <main>
     <router-view />
   </main>
-  <footer>
-    <Footer />
-  </footer>
+  <Footer />
 </template>
-
-<script setup lang="ts">
-import 'what-input'
-</script>
 
 <style lang="postcss">
 [data-whatintent="mouse"]:focus,
