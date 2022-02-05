@@ -3,26 +3,21 @@
 </template>
 
 <script lang="ts">
+import head from '@/functions/Head'
 import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import { useRootStore } from '../../store/root'
+import { useRootStore } from '@/store/root'
 
 export default {
   setup() {
-    useHead({
-      title: 'Hello Hoge',
-      meta: [
-        {
-          name: 'description',
-          content: 'Website description',
-        },
-      ],
-      style: [
-        {
-          children: 'body {color: #567839}',
-        },
-      ],
-    })
+    useHead(
+      head({
+        title: 'hoge',
+        description: '',
+        path: useRoute().path
+      })
+    )
 
     const store = useRootStore()
 

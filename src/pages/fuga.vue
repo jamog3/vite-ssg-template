@@ -72,19 +72,19 @@
 </template>
 
 <script lang="ts">
+import head from '@/functions/Head'
+import { useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 export default {
   setup() {
-    useHead({
-      title: 'Hello Fuga',
-      meta: [
-        {
-          name: 'description',
-          content: 'Website description',
-        },
-      ],
-    })
+    useHead(
+      head({
+        title: 'fuga',
+        description: 'fuga',
+        path: useRoute().path
+      })
+    )
   }
 }
 </script>

@@ -9,21 +9,20 @@
 </template>
 
 <script lang="ts">
+import head from '@/functions/Head'
+import { useRoute } from 'vue-router'
 import { computed, defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 import { useRootStore } from '@/store/root'
 
 export default defineComponent({
   setup() {
-    useHead({
-      title: 'Hello',
-      meta: [
-        {
-          name: 'description',
-          content: 'Website description',
-        },
-      ],
-    })
+    useHead(
+      head({
+        title: 'index',
+        path: useRoute().path
+      })
+    )
 
     const store = useRootStore()
 
