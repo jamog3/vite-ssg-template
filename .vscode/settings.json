@@ -1,5 +1,17 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.validate": false,
   "editor.formatOnSave": true,
-  "stylelint.autoFixOnSave": true,
+  // note: stylelint
+  // "stylelint.validate": [
+  //   "css",
+  //   "postcss",
+  //   "vue"
+  // ],
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll.stylelint": true
+  // }
+  // note: stylelint-plus
+  "stylelint.autoFixOnSave": true
 }

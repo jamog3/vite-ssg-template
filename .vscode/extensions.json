@@ -3,6 +3,7 @@
     "johnsoncodehk.volar",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
+    // "stylelint.vscode-stylelint",
     "hex-ci.stylelint-plus"
-  ],
+  ]
 }
