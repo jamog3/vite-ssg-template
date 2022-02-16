@@ -21,6 +21,7 @@
     ]
   },
   "plugins": [],
+  "ignorePatterns": ["components.d.ts"],
   "rules": {
     "semi": [
       "error",
@@ -53,3 +54,6 @@
     ]
   }
 }
+
+
+components.d.ts
