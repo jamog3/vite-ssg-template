@@ -1,4 +1,5 @@
 import path from 'path'
+import viteImagemin from 'vite-plugin-imagemin'
 import type { UserConfig } from 'vite'
 import {} from 'vite-ssg'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -25,6 +26,33 @@ const config: UserConfig = {
     Layouts(),
     Components({
       extensions: ['vue']
+    }),
+    viteImagemin({
+      gifsicle: {
+        optimizationLevel: 7,
+        interlaced: false
+      },
+      optipng: {
+        optimizationLevel: 7
+      },
+      mozjpeg: {
+        quality: 80
+      },
+      pngquant: {
+        quality: [0.65, 0.8],
+        speed: 1
+      },
+      svgo: {
+        plugins: [
+          {
+            name: 'removeViewBox'
+          },
+          {
+            name: 'removeEmptyAttrs',
+            active: false
+          }
+        ]
+      }
     })
   ],
   ssgOptions: {
