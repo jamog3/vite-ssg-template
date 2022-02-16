@@ -21,6 +21,7 @@
     "lint:markup": "vue-tsc --noEmit",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint src/**/*.{css,vue}",
+    "lint-staged": "lint-staged",
     "prepare": "husky install",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
