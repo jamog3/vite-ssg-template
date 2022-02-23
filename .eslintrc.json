@@ -16,9 +16,7 @@
   "parserOptions": {
     "ecmaVersion": 2021,
     "project": "./tsconfig.json",
-    "extraFileExtensions": [
-      ".vue"
-    ]
+    "extraFileExtensions": [".vue"]
   },
   "plugins": [],
   "ignorePatterns": ["components.d.ts"],
@@ -40,20 +38,9 @@
     "no-extra-semi": "error",
     "no-unexpected-multiline": "error",
     "no-unreachable": "error",
-    "vue/no-multiple-template-root": [
-      "off"
-    ],
-    "vue/multi-word-component-names": [
-      "off"
-    ],
-    "vue/max-attributes-per-line": [
-      "off"
-    ],
-    "vue/singleline-html-element-content-newline": [
-      "off"
-    ]
+    "vue/no-multiple-template-root": ["off"],
+    "vue/multi-word-component-names": ["off"],
+    "vue/max-attributes-per-line": ["off"],
+    "vue/singleline-html-element-content-newline": ["off"]
   }
 }
-
-
-components.d.ts

@@ -17,16 +17,18 @@ const user = computed(() => store.user)
 </script>
 
 <template>
-  <p>Hello I am Index</p>
-  <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy" />
-  <Counter />
-  <MousePos />
-  <div class="hoge">a</div>
-  <div class="hoge3">a</div>
-  <div class="hoge4">a</div>
-  <pre>
-    {{ JSON.stringify(user) }}
-  </pre>
+  <div>
+    <p>Hello I am Index</p>
+    <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy" />
+    <Counter />
+    <MousePos />
+    <div class="hoge">a</div>
+    <div class="hoge3">a</div>
+    <div class="hoge4">a</div>
+    <pre>
+      {{ JSON.stringify(user) }}
+    </pre>
+  </div>
 </template>
 
 <style lang="postcss" scoped>
