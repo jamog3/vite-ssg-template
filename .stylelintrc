@@ -1,28 +1,22 @@
 {
   "plugins": ["stylelint-order"],
-  "extends": [
-    "stylelint-config-html/vue",
-    "stylelint-config-standard",
-    "stylelint-config-property-sort-order-smacss"
-  ],
-  "ignoreFiles": [
-    "node_modules/**/*"
-  ],
+  "extends": ["stylelint-config-html/vue", "stylelint-config-standard", "stylelint-config-property-sort-order-smacss"],
+  "ignoreFiles": ["node_modules/**/*"],
   "customSyntax": "postcss-html",
   "rules": {
     "indentation": 2,
     "comment-empty-line-before": null,
     "declaration-no-important": true,
-    "value-list-comma-newline-after": "never-multi-line",
+    "value-list-comma-newline-after": null,
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["custom-media", "import-normalize"]
+        "ignoreAtRules": ["custom-media", "keyframes"]
       }
     ],
     "no-empty-first-line": null,
     "custom-property-no-missing-var-function": null,
-    "rule-empty-line-before": "always",
+    "rule-empty-line-before": null,
     "at-rule-empty-line-before": "never"
   }
 }

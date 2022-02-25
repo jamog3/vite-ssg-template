@@ -15,7 +15,6 @@ import 'what-input'
 
 <style lang="postcss">
 @keyframes fade-in {
-
   from {
     opacity: 0;
   }
@@ -25,7 +24,6 @@ import 'what-input'
   }
 }
 @keyframes fade-out {
-
   from {
     opacity: 1;
   }
