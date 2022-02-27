@@ -6,6 +6,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import { useRootStore } from './store/root'
 import VueSmoothScroll from 'vue3-smooth-scroll'
 import App from './App.vue'
+import BodyScrollLock from '@/plugins/BodyScrollLock'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -19,6 +20,7 @@ export const createApp = ViteSSG(
       duration: 240,
       updateHistory: false
     })
+    app.use(BodyScrollLock)
 
     // Note: redirect
     if (isClient) {

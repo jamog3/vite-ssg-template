@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import head from '@/functions/Head'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import { useRootStore } from '@/store/root'
@@ -14,12 +14,19 @@ useHead(
 
 const store = useRootStore()
 const user = computed(() => store.user)
+const isModalShow = ref(false)
 </script>
 
 <template>
   <div>
     <p>Hello I am Index</p>
     <img class="image" src="@/assets/images/test.jpg" width="640" height="485" alt="" loading="lazy" />
+    <button @click="isModalShow = true">show modal</button>
+    <div v-show="isModalShow" v-scroll-lock="isModalShow" class="modal">
+      <div class="body">
+        <button @click="isModalShow = false">hide modal</button>
+      </div>
+    </div>
     <Counter />
     <MousePos />
     <div class="hoge">a</div>
@@ -60,6 +67,21 @@ const user = computed(() => store.user)
   font-weight: bold;
   @media screen and (--media-pc) {
     display: flex;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  background: #ccc;
+
+  & > .body {
+    height: 200vh;
   }
 }
 </style>
