@@ -3,14 +3,16 @@ import 'what-input'
 </script>
 
 <template>
-  <main>
-    <router-view v-slot="{ Component, route }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" :key="route.path" />
-      </transition>
-    </router-view>
-  </main>
-  <Footer />
+  <div>
+    <main>
+      <router-view v-slot="{ Component, route }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" :key="route.path" />
+        </transition>
+      </router-view>
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <style lang="postcss">

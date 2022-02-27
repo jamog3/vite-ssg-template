@@ -13,8 +13,10 @@ useHead({
 </script>
 
 <template>
-  <p class="hoge">404</p>
-  <router-link to="/" class="icon-btn mx-2"> index </router-link>
+  <div>
+    <p class="hoge">404</p>
+    <router-link to="/" class="icon-btn mx-2"> index </router-link>
+  </div>
 </template>
 
 <style lang="postcss" scoped>

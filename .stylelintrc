@@ -1,7 +1,7 @@
 {
   "plugins": ["stylelint-order"],
   "extends": ["stylelint-config-html/vue", "stylelint-config-standard", "stylelint-config-property-sort-order-smacss"],
-  "ignoreFiles": ["node_modules/**/*"],
+  "ignoreFiles": ["node_modules/**/*", "dist/**/*"],
   "customSyntax": "postcss-html",
   "rules": {
     "indentation": 2,
