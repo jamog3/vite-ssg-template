@@ -5,21 +5,24 @@ module.exports = {
     require('stylelint'),
     require('postcss-preset-env')({
       autoprefixer: {
-        grid: 'autoplace',
+        grid: 'autoplace'
       },
-      stage: 1,
+      stage: 1
     }),
     require('postcss-sort-media-queries')({ sort: 'mobile-first' }),
     process.env.NODE_ENV === 'production' &&
       require('cssnano')({
-        autoprefixer: {
-          add: false,
-        },
-        preset: 'advanced',
+        autoprefixer: false,
+        preset: [
+          'advanced',
+          {
+            zindex: false
+          }
+        ]
       }),
     require('postcss-reporter')({
       clearReportedMessages: true,
-      throwError: false,
-    }),
-  ],
+      throwError: false
+    })
+  ]
 }

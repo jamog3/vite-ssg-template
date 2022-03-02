@@ -1,14 +1,14 @@
 /* stylelint-disable declaration-no-important */
 .mobile-inline {
   display: inline !important;
-  @media screen and (--media-pc) {
+  @media (--media-pc) {
     display: none !important;
   }
 }
 
 .mobile-hide {
   display: none !important;
-  @media screen and (--media-pc) {
+  @media (--media-pc) {
     display: inline !important;
   }
 }

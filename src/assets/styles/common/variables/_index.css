@@ -1,8 +1,7 @@
 /* Variables
  * ========================================================================== */
-
 @import "_color";
 @import "_font";
-@import "_media";
+/* @import "_media"; import to main.ts */
 @import "_transition";
 @import "_width";

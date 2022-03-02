@@ -49,7 +49,7 @@ const isModalShow = ref(false)
 .hoge {
   display: block;
   background: #00f;
-  @media screen and (--media-pc) {
+  @media (--media-pc) {
     display: grid;
   }
 }
@@ -65,7 +65,7 @@ const isModalShow = ref(false)
   transition: margin-right 2s var(--animation-md) 0.5s;
   font-size: rem(10px);
   font-weight: bold;
-  @media screen and (--media-pc) {
+  @media (--media-pc) {
     display: flex;
   }
 }

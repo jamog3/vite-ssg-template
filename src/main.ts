@@ -7,6 +7,8 @@ import { useRootStore } from './store/root'
 import VueSmoothScroll from 'vue3-smooth-scroll'
 import App from './App.vue'
 import BodyScrollLock from '@/plugins/BodyScrollLock'
+import '@/assets/styles/common/variables/_media.css'
+import '@/assets/styles/common.css'
 
 const routes = setupLayouts(generatedRoutes)
 
