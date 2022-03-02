@@ -1,5 +1,33 @@
 <script setup lang="ts">
 import 'what-input'
+import { useRoute } from 'vue-router'
+import { watch } from 'vue'
+import { nextTick, onMounted, inject } from 'vue'
+
+const $smoothScroll = inject('smoothScroll')
+const $route = useRoute()
+const scrollToHash = (hash: string) => {
+  nextTick(() => {
+    // Note: #を削除
+    const id = hash.slice(1)
+    $smoothScroll({
+      scrollTo: document.getElementById(id)
+    })
+  })
+}
+watch(
+  () => $route.hash,
+  (to) => {
+    if (to) {
+      scrollToHash(to)
+    }
+  }
+)
+onMounted(() => {
+  if ($route.hash) {
+    scrollToHash($route.hash)
+  }
+})
 </script>
 
 <template>
