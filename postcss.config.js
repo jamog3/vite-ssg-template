@@ -16,6 +16,9 @@ module.exports = {
         preset: [
           'advanced',
           {
+            discardComments: {
+              removeAll: true
+            },
             zindex: false
           }
         ]

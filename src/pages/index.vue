@@ -51,6 +51,7 @@ const isModalShow = ref(false)
   background: #00f;
   @media (--media-pc) {
     display: grid;
+    background: #f0f;
   }
 }
 
